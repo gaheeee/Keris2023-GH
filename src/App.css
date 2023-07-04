@@ -143,6 +143,8 @@ button {
   margin-bottom: 3rem;
 }
 
+/*---------------------*/
+
 /*footer*/
 
 footer {
@@ -158,6 +160,8 @@ footer p {
   margin-left: 7rem;
   text-align: left;
 }
+
+/*------------------------*/
 
 /*header*/
 .header-upper {
@@ -200,6 +204,8 @@ header>h1 {
   text-align: center;
   color: rgb(40, 44, 97);
 }
+
+/*--------------------------*/
 
 /*P0101 main*/
 
@@ -264,8 +270,87 @@ main {
   }
 }
 
+.main-btn {
+  margin: 2rem 0rem;
+}
+
+/*-----------------------------*/
+
+/*p0102*/
 
 
+.calendar-space {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0rem 10%;
+}
+
+/*요소별 체크박스*/
+.calendar-check-compo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.checkbox-name{
+  background-color: #ffe699;
+  width: 20rem;
+  padding-top: 3px;
+  border-radius: 5px;
+  margin: 0rem 1rem;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-custom {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  border: 2px solid #ffe699;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom::after {
+  content: '✔';
+  position: relative;
+  display: none;
+  font-weight: bold;
+}
+
+.checkbox-input:checked+.checkbox-custom::after {
+  display: block;
+  width: 8px;
+  height: 8px;
+  top: 10%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*달력*/
+
+.calender {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: solid 1px #6db4f2;
+}
+
+
+
+
+
+
+
+/*------------------------*/
 
 
 /*button component*/
@@ -288,7 +373,9 @@ main {
   color: grey;
 }
 
+/*-------------------*/
 
+/*p0103*/
 .model-check {
   display: flex;
   justify-content: center;
@@ -307,3 +394,5 @@ main {
   margin: 1rem;
   height: 18rem;
 }
+
+/*-----------------------------*/
