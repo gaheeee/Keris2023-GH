@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import P_01_01 from "./pages/P_01_01";
-import P_01_02 from "./pages/P_01_02";
-import P_01_03 from "./pages/P_01_03";
-import P_01_04 from "./pages/P_01_04";
-import P_01_05 from "./pages/P_01_05";
+import P_01_01 from "./pages/P_01/P_01_01";
+import P_01_02 from "./pages/P_01/P_01_02";
+import P_01_03 from "./pages/P_01/P_01_03";
+import P_01_04 from "./pages/P_01/P_01_04";
+import P_01_05 from "./pages/P_01/P_01_05";
 
 export default function Routing() {
   return (

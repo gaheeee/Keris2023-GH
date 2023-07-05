@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Num from "./Num";
-import w1 from "../../../assets/weather/w1.png" ;
-import w2 from "../../../assets/weather/w2.png" 
-import w3 from "../../../assets/weather/w3.png" 
-import w4 from "../../../assets/weather/w4.png" 
-import w5 from "../../../assets/weather/w5.png" 
+import w1 from "../../../../assets/weather/w1.png" ;
+import w2 from "../../../../assets/weather/w2.png" 
+import w3 from "../../../../assets/weather/w3.png" 
+import w4 from "../../../../assets/weather/w4.png" 
+import w5 from "../../../../assets/weather/w5.png" 
 
 
 const Day = styled.div`

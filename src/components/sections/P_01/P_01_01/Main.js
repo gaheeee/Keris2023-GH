@@ -1,7 +1,7 @@
-import img1 from "../../../assets/p0101_img01.png";
-import img2 from "../../../assets/p0101_img02.png";
-import img3 from "../../../assets/p0101_img03.png";
-import BlueBtn from "../buttons/BlueBtn";
+import img1 from "../../../../assets/p0101_img01.png";
+import img2 from "../../../../assets/p0101_img02.png";
+import img3 from "../../../../assets/p0101_img03.png";
+import BlueBtn from "../../buttons/BlueBtn";
 
 export default function Main() {
     return (

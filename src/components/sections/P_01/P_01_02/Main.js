@@ -1,6 +1,6 @@
-import img1 from "../../../assets/p0102_img01.png"
-import BlueBtn from "../buttons/BlueBtn";
-import GreyBtn from "../buttons/GreyBtn";
+import img1 from "../../../../assets/p0102_img01.png"
+import BlueBtn from "../../buttons/BlueBtn";
+import GreyBtn from "../../buttons/GreyBtn";
 import Cal from "./Cal";
 import Element from "./Element";
 
