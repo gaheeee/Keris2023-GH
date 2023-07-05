@@ -1,7 +1,7 @@
 import stdimg from "../assets/std_img.png";
 import GreyBtn from "./sections/buttons/GreyBtn";
 
-export default function Heading({ to }) {
+export default function Heading({ to , children}) {
     return (
         <header>
             <div className="header-upper">
@@ -19,7 +19,7 @@ export default function Heading({ to }) {
                     <p>김대한 학생</p>
                 </div>
             </div>
-            <h1>날씨에 따른 전기 사용량 예측 (회귀모델)</h1>
+            <h1>{children}</h1>
         </header>
     );
 }

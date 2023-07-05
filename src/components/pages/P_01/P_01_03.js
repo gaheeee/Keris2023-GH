@@ -4,7 +4,7 @@ import Main from "../../sections/P_01/P_01_03/Main"
 export default function P_01_03(){
     return(
         <>
-        <Heading to = "/p0102"/>
+        <Heading to = "/p0102">날씨에 따른 전기 사용량 예측 (회귀모델)</Heading>
         <Main/>
         </>
     );

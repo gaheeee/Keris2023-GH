@@ -41,7 +41,7 @@ export default function Main() {
                     {selectedTab === 0 && (
                         <>
                             <ModelBtn to="/p0101">나와 유사한 유명인 찾기</ModelBtn>
-                            <ModelBtn to="/">사진 명화풍 만들기</ModelBtn>
+                            <ModelBtn to="/p0201">사진 명화풍 만들기</ModelBtn>
                             <ModelBtn to="/">키워드로 작문 하기</ModelBtn>
                         </>
                     )}
