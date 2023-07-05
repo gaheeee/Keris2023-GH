@@ -2,6 +2,7 @@ import img1 from "../../../../assets/p0101_img01.png";
 import img2 from "../../../../assets/p0101_img02.png";
 import img3 from "../../../../assets/p0101_img03.png";
 import BlueBtn from "../../buttons/BlueBtn";
+import Card from "../../card/Card";
 
 export default function Main() {
     return (
@@ -17,30 +18,9 @@ export default function Main() {
                 <button>매뉴얼 다운로드</button>
             </div>
             <div className="main-card">
-                <div className="card">
-                    <button>step 1</button>
-                    <p>데이터 선택</p>
-                    <img
-                        src={img1}
-                        alt="img1"
-                    ></img>
-                </div>
-                <div className="card">
-                    <button>step 2</button>
-                    <p>모델 선택</p>
-                    <img
-                        src={img2}
-                        alt="img2"
-                    ></img>
-                </div>
-                <div className="card">
-                    <button>step 3</button>
-                    <p>결과 확인</p>
-                    <img
-                        src={img3}
-                        alt="img3"
-                    ></img>
-                </div>
+                <Card btn="step1" img={img1}>데이터 선택</Card>
+                <Card btn="step2" img={img2}>모델 선택</Card>
+                <Card btn="step3" img={img3}>결과 확인</Card>
             </div>
             <BlueBtn to="/p0102">
                 체험하기
