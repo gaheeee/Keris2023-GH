@@ -4,7 +4,7 @@ import P_01_01 from "./pages/P_01_01";
 import P_01_02 from "./pages/P_01_02";
 import P_01_03 from "./pages/P_01_03";
 import P_01_04 from "./pages/P_01_04";
-
+import P_01_05 from "./pages/P_01_05";
 
 export default function Routing() {
   return (
@@ -14,6 +14,7 @@ export default function Routing() {
       <Route path="/p0102" element={<P_01_02 />} />
       <Route path="/p0103" element={<P_01_03 />} />
       <Route path="/p0104" element={<P_01_04 />} />
+      <Route path="/p0105" element={<P_01_05 />} />
     </Routes>
   );
 }

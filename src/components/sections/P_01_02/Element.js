@@ -5,10 +5,10 @@ export default function Element() {
         "평균 기온": true,
         "최저 기온": false,
         "최고 기온": false,
-        강수량: false,
-        습도: false,
-        풍속: false,
-        일조시간: false
+        "강수량": false,
+        "습도": false,
+        "풍속": false,
+        "일조시간": false
     });
 
     const handleCheckboxChange = (event) => {
@@ -41,9 +41,7 @@ export default function Element() {
                     disabled={checkboxName === "평균 기온"} // 평균 기온 체크박스는 비활성화
                 />
                 <span className="checkbox-custom" ></span>
-
             </label>
-
         ));
     };
 

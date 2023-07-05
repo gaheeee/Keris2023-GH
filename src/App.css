@@ -152,7 +152,7 @@ footer {
   background-color: grey;
   color: #ffffff;
   display: flex;
-  margin-top: -1.4rem;
+  margin-top: 1rem;
 }
 
 footer p {
@@ -280,9 +280,14 @@ main {
 
 
 .calendar-space {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 0rem 10%;
+  display: flex;
+  justify-content: center;
+}
+.calendar-space-left{
+  width: 25%;
+}
+.calendar-space-right{
+  width: 40%;
 }
 
 /*요소별 체크박스*/
@@ -295,12 +300,13 @@ main {
 .checkbox-label {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
 }
-.checkbox-name{
+
+.checkbox-name {
   background-color: #ffe699;
-  width: 20rem;
+  width: 80%;
   padding-top: 3px;
   border-radius: 5px;
   margin: 0rem 1rem;
@@ -342,8 +348,27 @@ main {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   border: solid 1px #6db4f2;
+  
 }
 
+
+.num {
+  display: grid;
+  grid-template-columns:1.5fr 1fr;
+  border-top: solid 1px #6db4f2;
+  min-height: 6rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.blank{
+  border-top: solid 1px #6db4f2;
+}
+
+.num-ele{
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -392,7 +417,39 @@ main {
   display: flex;
   justify-content: center;
   margin: 1rem;
-  height: 18rem;
+  height: 20rem;
 }
 
 /*-----------------------------*/
+
+/*p0104*/
+
+.p0104-main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.board-wrap{
+  position: relative;
+}
+.board-img{
+  width: 100%;
+  vertical-align: middle;
+}
+.board-text{
+  position: absolute;
+  top:40%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+
+.green-board{
+  color: white;
+  white-space: pre;
+  text-align: left;
+}
+
+/*---------------------*/
