@@ -28,7 +28,7 @@ export default function Cal() {
             <Day>목</Day>
             <Day>금</Day>
             <Day>토</Day>
-            <div className="blank"/>
+            <div className="blank"></div>
             <div className="blank"/>
             <div className="blank"/>
             <div className="blank"/>

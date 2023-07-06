@@ -42,7 +42,7 @@ export default function Main() {
                         <>
                             <ModelBtn to="/p0101">나와 유사한 유명인 찾기</ModelBtn>
                             <ModelBtn to="/p0201">사진 명화풍 만들기</ModelBtn>
-                            <ModelBtn to="/">키워드로 작문 하기</ModelBtn>
+                            <ModelBtn to="/p0301">키워드로 작문 하기</ModelBtn>
                         </>
                     )}
                     {selectedTab === 1 && (

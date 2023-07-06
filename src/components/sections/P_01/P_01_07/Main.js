@@ -1,4 +1,4 @@
-import img1 from "../../../../assets/p0105_img01.png"
+import img1 from "../../../../assets/p0106_img01.png"
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
 
@@ -10,12 +10,12 @@ export default function Main() {
             </div>
 
             <div>
-               <h1>다섯번째 페이지</h1>
+               <h1>일곱번째 페이지</h1>
             </div>
 
             <div className="main-btn">
-                <GreyBtn to="/p0104"></GreyBtn>
-                <BlueBtn to="/p0106">다음 단계로</BlueBtn>
+                <GreyBtn to="/p0106"></GreyBtn>
+                <BlueBtn to="/">체험 종료</BlueBtn>
             </div>
         </main>
     );

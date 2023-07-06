@@ -5,7 +5,13 @@ import P_01_02 from "./pages/P_01/P_01_02";
 import P_01_03 from "./pages/P_01/P_01_03";
 import P_01_04 from "./pages/P_01/P_01_04";
 import P_01_05 from "./pages/P_01/P_01_05";
+import P_01_06 from "./pages/P_01/P_01_06";
+import P_01_07 from "./pages/P_01/P_01_07";
+
 import P_02_01 from "./pages/P_02/P_02_01";
+
+import P_03_01 from "./pages/P_03/P_03_01";
+import P_03_02 from "./pages/P_03/P_03_02";
 
 export default function Routing() {
   return (
@@ -16,8 +22,13 @@ export default function Routing() {
       <Route path="/p0103" element={<P_01_03 />} />
       <Route path="/p0104" element={<P_01_04 />} />
       <Route path="/p0105" element={<P_01_05 />} />
+      <Route path="/p0106" element={<P_01_06 />} />
+      <Route path="/p0107" element={<P_01_07 />} />
       
       <Route path="/p0201" element={<P_02_01 />} />
+
+      <Route path="/p0301" element={<P_03_01 />} />
+      <Route path="/p0302" element={<P_03_02 />} />
     </Routes>
   );
 }
