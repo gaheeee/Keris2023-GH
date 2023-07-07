@@ -399,8 +399,9 @@ main {
 .greybtn {
   background-color: rgb(242, 242, 242);
   text-decoration: none;
+  border-radius: 7px;
   margin: 0.5rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: grey;
 }

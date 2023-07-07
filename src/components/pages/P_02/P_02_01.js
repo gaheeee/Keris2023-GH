@@ -4,7 +4,7 @@ import Main from "../../sections/P_02/P_02_01/Main"
 export default function P_02_01(){
     return(
         <>
-        <Heading to = "/">데이터 가져오기</Heading>
+        <Heading to = "/">사진에서 서로 다른 대상 찾아내기 (객체 검출)</Heading>
         <Main/>
         </>
     );

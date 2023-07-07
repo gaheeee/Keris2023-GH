@@ -10,7 +10,9 @@ export default function Main() {
             </div>
 
             <div>
-               <h1>다섯번째 페이지</h1>
+               <h1>다섯번째 페이지
+                그래프 이미지 파일로 제발 
+               </h1>
             </div>
 
             <div className="main-btn">

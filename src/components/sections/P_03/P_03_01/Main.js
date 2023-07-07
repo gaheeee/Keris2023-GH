@@ -1,6 +1,6 @@
-import img1 from "../../../../assets/p0301_img01.png";
-import img2 from "../../../../assets/p0301_img02.png";
-import img3 from "../../../../assets/p0301_img03.png";
+import img1 from "../../../../assets/p03/p0301_img01.png";
+import img2 from "../../../../assets/p03/p0301_img02.png";
+import img3 from "../../../../assets/p03/p0301_img03.png";
 import BlueBtn from "../../buttons/BlueBtn";
 import Card from "../../card/Card";
 

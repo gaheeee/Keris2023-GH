@@ -9,9 +9,12 @@ import P_01_06 from "./pages/P_01/P_01_06";
 import P_01_07 from "./pages/P_01/P_01_07";
 
 import P_02_01 from "./pages/P_02/P_02_01";
+import P_02_02 from "./pages/P_02/P_02_02";
 
 import P_03_01 from "./pages/P_03/P_03_01";
 import P_03_02 from "./pages/P_03/P_03_02";
+
+import DataTest from "./pages/DataTest";
 
 export default function Routing() {
   return (
@@ -26,9 +29,12 @@ export default function Routing() {
       <Route path="/p0107" element={<P_01_07 />} />
       
       <Route path="/p0201" element={<P_02_01 />} />
+      <Route path="/p0202" element={<P_02_02 />} />
 
       <Route path="/p0301" element={<P_03_01 />} />
       <Route path="/p0302" element={<P_03_02 />} />
+
+      <Route path="/data" element={<DataTest />} />
     </Routes>
   );
 }
