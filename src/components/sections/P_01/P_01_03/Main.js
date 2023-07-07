@@ -4,10 +4,10 @@ import CheckBtn from "./CheckBtn";
 
 import { useState } from 'react';
 import styled from "styled-components";
-import img1 from "../../../../assets/p0103_img01.png"
-import img2 from "../../../../assets/p0103_img02.png"
-import img3 from "../../../../assets/p0103_img03.png"
-import img4 from "../../../../assets/p0103_img04.png"
+import img1 from "../../../../assets/p01/p0103_img01.png"
+import img2 from "../../../../assets/p01/p0103_img02.png"
+import img3 from "../../../../assets/p01/p0103_img03.png"
+import img4 from "../../../../assets/p01/p0103_img04.png"
 
 const Model = styled.div`
   width : 25%;

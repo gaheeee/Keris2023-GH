@@ -1,5 +1,5 @@
-import img1 from "../../../../assets/p0106_img01.png"
-import img2 from "../../../../assets/p0106_img02.png"
+import img1 from "../../../../assets/p01/p0106_img01.png"
+import img2 from "../../../../assets/p01/p0106_img02.png"
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
 import Cal from "../P_01_02/Cal";

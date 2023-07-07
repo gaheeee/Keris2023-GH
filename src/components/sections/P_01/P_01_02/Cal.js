@@ -33,38 +33,38 @@ export default function Cal() {
             <div className="blank"/>
             <div className="blank"/>
             <Num img={w2}>
-                <b>7/1</b>
+                7/1
             </Num>
-            <Num img={w2}><b>2</b></Num>
-            <Num img={w3}><b>3</b></Num>
-            <Num img={w4}><b>4</b></Num>
-            <Num img={w1}><b>5</b></Num>
-            <Num img={w2}><b>6</b></Num>
-            <Num img={w1}><b>7</b></Num>
-            <Num img={w1}><b>8</b></Num>
-            <Num img={w3}><b>9</b></Num>
-            <Num img={w2}><b>10</b></Num>
-            <Num img={w4}><b>11</b></Num>
-            <Num img={w4}><b>12</b></Num>
-            <Num img={w4}><b>13</b></Num>
-            <Num img={w4}><b>14</b></Num>
-            <Num img={w5}><b>15</b></Num>
-            <Num img={w1}><b>16</b></Num>
-            <Num img={w1}><b>17</b></Num>
-            <Num img={w2}><b>18</b></Num>
-            <Num img={w5}><b>19</b></Num>
-            <Num img={w4}><b>20</b></Num>
-            <Num img={w2}><b>21</b></Num>
-            <Num img={w2}><b>22</b></Num>
-            <Num img={w1}><b>23</b></Num>
-            <Num img={w1}><b>24</b></Num>
-            <Num img={w2}><b>25</b></Num>
-            <Num img={w2}><b>26</b></Num>
-            <Num img={w4}><b>27</b></Num>
-            <Num img={w4}><b>28</b></Num>
-            <Num img={w4}><b>29</b></Num>
-            <Num img={w2}><b>30</b></Num>
-            <Num img={w1}><b>31</b></Num>
+            <Num img={w2}>2</Num>
+            <Num img={w3}>3</Num>
+            <Num img={w4}>4</Num>
+            <Num img={w1}>5</Num>
+            <Num img={w2}>6</Num>
+            <Num img={w1}>7</Num>
+            <Num img={w1}>8</Num>
+            <Num img={w3}>9</Num>
+            <Num img={w2}>10</Num>
+            <Num img={w4}>11</Num>
+            <Num img={w4}>12</Num>
+            <Num img={w4}>13</Num>
+            <Num img={w4}>14</Num>
+            <Num img={w5}>15</Num>
+            <Num img={w1}>16</Num>
+            <Num img={w1}>17</Num>
+            <Num img={w2}>18</Num>
+            <Num img={w5}>19</Num>
+            <Num img={w4}>20</Num>
+            <Num img={w2}>21</Num>
+            <Num img={w2}>22</Num>
+            <Num img={w1}>23</Num>
+            <Num img={w1}>24</Num>
+            <Num img={w2}>25</Num>
+            <Num img={w2}>26</Num>
+            <Num img={w4}>27</Num>
+            <Num img={w4}>28</Num>
+            <Num img={w4}>29</Num>
+            <Num img={w2}>30</Num>
+            <Num img={w1}>31</Num>
         </div>
     );
 }

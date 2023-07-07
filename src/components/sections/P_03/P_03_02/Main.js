@@ -1,4 +1,4 @@
-import img1 from "../../../../assets/p0102_img01.png"
+import img1 from "../../../../assets/p01/p0102_img01.png"
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
 

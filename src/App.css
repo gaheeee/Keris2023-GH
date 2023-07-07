@@ -354,10 +354,9 @@ main {
 
 .num {
   display: grid;
-  grid-template-columns:1.5fr 1fr;
+  grid-template-columns:1fr 1fr;
   border-top: solid 1px #6db4f2;
   min-height: 6rem;
-  text-align: left;
   font-size: 0.9rem;
 }
 
@@ -368,8 +367,16 @@ main {
 .num-ele{
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
+.num-ele > p{
+  font-size: 1px;
+}
+.num-img > img{
+  margin-top: 5px;
+  width: 2rem;
+}
 
 
 
