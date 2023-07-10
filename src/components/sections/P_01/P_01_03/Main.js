@@ -4,10 +4,10 @@ import CheckBtn from "./CheckBtn";
 
 import { useState } from 'react';
 import styled from "styled-components";
-import img1 from "../../../../assets/p01/p0103_img01.png"
-import img2 from "../../../../assets/p01/p0103_img02.png"
-import img3 from "../../../../assets/p01/p0103_img03.png"
-import img4 from "../../../../assets/p01/p0103_img04.png"
+import img from "../../../../assets/p01/p0103_img01.png"
+import img1 from "../../../../assets/p01/p0103_img02.png"
+import img2 from "../../../../assets/p01/p0103_img03.png"
+import img3 from "../../../../assets/p01/p0103_img04.png"
 
 const Model = styled.div`
   width : 25%;
@@ -42,7 +42,7 @@ function Main() {
     return (
         <main>
             <div>
-                <img src={img1} alt="img1" />
+                <img src={img} alt="img" />
             </div>
 
             <div className="model-check">
@@ -70,7 +70,7 @@ function Main() {
                 {selectedTab === 0 && (
                     <>
                         <Model className="checked-model-img-space" border="#b4c7e7">
-                            <img  src={img2} alt="img2" />
+                            <img  src={img1} alt="img1" />
                         </Model>
                         <ModelDes border="#b4c7e7">
                             <h3>선형 회귀 모델</h3>
@@ -86,7 +86,7 @@ function Main() {
                 {selectedTab === 1 && (
                     <>
                         <Model className="checked-model-img-space" border="#ffe699">
-                            <img src={img3} alt="img3" />
+                            <img src={img2} alt="img2" />
                         </Model>
                         <ModelDes border="#ffe699">
                             <h3>다항 회귀 모델</h3>
@@ -103,7 +103,7 @@ function Main() {
                 {selectedTab === 2 && (
                     <>
                         <Model className="checked-model-img-space" border="#f4b183">
-                            <img src={img4} alt="img4" />
+                            <img src={img3} alt="img3" />
                         </Model>
                         <ModelDes border="#f4b183">
                             <h3>로지스틱 회귀 모델</h3>

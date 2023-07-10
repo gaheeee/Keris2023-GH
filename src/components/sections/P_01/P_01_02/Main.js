@@ -1,4 +1,4 @@
-import img1 from "../../../../assets/p01/p0102_img01.png"
+import img from "../../../../assets/p01/p0102_img01.png"
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
 import Cal from "./Cal";
@@ -8,7 +8,7 @@ export default function Main() {
     return (
         <main>
             <div>
-                <img src={img1} alt="img1" />
+                <img src={img} alt="img" />
             </div>
 
             <div className="calendar-space">

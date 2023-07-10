@@ -13,7 +13,7 @@ export default function Main() {
                 <img src={img} alt="img" />
             </div>
 
-            <b>세번째 사람 라벨링 (사진 교체 후 문구 지우기)</b>
+            <b>세번째 사람 라벨링 (사진 교체 후 문구 지우기 3번 정답)</b>
 
             <div className="p0202-main">
                 <p>먼저, <b>사람</b>을 분류하는 모델을 만들고자 합니다.
@@ -22,6 +22,9 @@ export default function Main() {
                     img1={img1}
                     img2={img2}
                     img3={img3}
+                    answer="img3"
+                    fail1="img1"
+                    fail2="img2"
                     prop_grey={"/p0203"}
                     prop_blue={"/p0205"}
                 />

@@ -3,7 +3,7 @@ import GreyBtn from "../../buttons/GreyBtn";
 import { useState } from 'react';
 
 
-export default function Labeling({ img1, img2, img3, prop_grey, prop_blue }) {
+export default function Labeling({ img1, img2, img3, answer, fail1, fail2, prop_grey, prop_blue }) {
     const [selectedImage, setSelectedImage] = useState(null);
     const [showModal, setShowModal] = useState(false);
 
@@ -11,9 +11,9 @@ export default function Labeling({ img1, img2, img3, prop_grey, prop_blue }) {
         setSelectedImage(imageName);
     };
     const handleNextClick = () => {
-        if (selectedImage === "img1") {
+        if (selectedImage === answer) {
             window.location.href = prop_blue;
-        } else if (selectedImage === "img2" || selectedImage === "img3") {
+        } else if (selectedImage === fail1 || selectedImage === fail2) {
             setShowModal(true);
         } else {
             alert('사진을 선택해주세요 !');

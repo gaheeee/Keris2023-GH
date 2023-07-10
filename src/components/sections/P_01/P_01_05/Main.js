@@ -1,4 +1,4 @@
-import img1 from "../../../../assets/p01/p0105_img01.png"
+import img from "../../../../assets/p01/p0105_img01.png"
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
 
@@ -6,7 +6,7 @@ export default function Main() {
     return (
         <main>
             <div>
-                <img src={img1} alt="img1"/>
+                <img src={img} alt="img"/>
             </div>
 
             <div>
