@@ -11,7 +11,7 @@ export default function Main() {
                 <img src={img1} alt="img"/>
             </div>
             <h4>전력값의 실제 데이터와 예측 데이터가 200 이하로 차이나면 O, 200 이상 X 표시해주세요.</h4>
-            <div className="calendar-space">
+            <div className="calendar-space2">
                <Cal/>
                <div>
                <img src={img2} alt="img"/>

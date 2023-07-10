@@ -1,16 +1,48 @@
 
-.p0202-main{
-   
-}
 
-.con > img {
+/*p0202*/
+.label-space{
+    display: flex;
+    justify-content: center;
+
+}
+.label-space > div {
     margin: 1rem;
-    width: 21%;
-    border: solid 4px;
+    width: 22rem;
+    transition: all 0.3s ease;
 }
 
-.p0202-img3{
+.label-space > div:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
 
-    border : solid 2px;
-    width: 30rem;
+
+.selected img{
+    cursor: pointer;
+    opacity: 30%;
+    border: solid 3px grey;
+}
+
+.modal{
+    color:#363636;
+    background-color: white;
+    border: solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal button{
+    border: solid 1px;
+    width: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #cfcfcf;
 }

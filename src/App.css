@@ -284,7 +284,7 @@ main {
   justify-content: center;
 }
 .calendar-space-left{
-  width: 25%;
+  width: 20%;
 }
 .calendar-space-right{
   width: 40%;
@@ -348,7 +348,7 @@ main {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   border: solid 1px #6db4f2;
-  
+
 }
 
 
@@ -369,13 +369,14 @@ main {
   flex-direction: column;
   text-align: center;
 }
-
-.num-ele > p{
-  font-size: 1px;
-}
-.num-img > img{
-  margin-top: 5px;
+.num-ele > img{
+  margin: 0.5rem 1rem;
   width: 2rem;
+}
+
+
+.num-span > p{
+  font-size: 1px;
 }
 
 
@@ -462,3 +463,10 @@ main {
 }
 
 /*---------------------*/
+
+.calendar-space2{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 1% 15%;
+}
