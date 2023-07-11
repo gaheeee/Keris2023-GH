@@ -2,7 +2,7 @@ import img from "../../../../assets/p02/p0213_img01.png"
 
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
-import Grid from "../P_02_07/Grid";
+import Grid from "./Grid";
 
 
 export default function Main() {
@@ -17,8 +17,8 @@ export default function Main() {
             </div>
 
             <div className="main-btn">
-                <GreyBtn to="/p0206"></GreyBtn>
-                <BlueBtn to="/p0208">분석 시작</BlueBtn>
+                <GreyBtn to="/p0212"></GreyBtn>
+                <BlueBtn to="/p0214">분석 시작</BlueBtn>
             </div>
         </main>
     );

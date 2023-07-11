@@ -21,6 +21,7 @@ import P_02_10 from "./pages/P_02/P_02_10";
 import P_02_11 from "./pages/P_02/P_02_11";
 import P_02_12 from "./pages/P_02/P_02_12";
 import P_02_13 from "./pages/P_02/P_02_13";
+import P_02_14 from "./pages/P_02/P_02_14";
 
 
 import P_03_01 from "./pages/P_03/P_03_01";
@@ -53,6 +54,7 @@ export default function Routing() {
       <Route path="/p0211" element={<P_02_11 />} />
       <Route path="/p0212" element={<P_02_12 />} />
       <Route path="/p0213" element={<P_02_13 />} />
+      <Route path="/p0214" element={<P_02_14 />} />
 
       <Route path="/p0301" element={<P_03_01 />} />
       <Route path="/p0302" element={<P_03_02 />} />

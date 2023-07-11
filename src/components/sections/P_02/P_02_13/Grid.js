@@ -73,10 +73,10 @@ export default function Grid() {
 
             <div className="p0207-modal-btn">
               <button onClick={toggleResult}>
-                {showDetectionResult ? "검출 결과 감추기" : "검출 결과 보기"}
+                {showDetectionResult ? "사람 결과 감추기" : "사람 결과 보기"}
               </button>
               <button onClick={toggleAccuracy}>
-                {showAccuracy ? "정확도 감추기" : "정확도 보기"}
+                {showAccuracy ? "가방 결과 감추기" : "가방 결과 보기"}
               </button>
               <button className="close" onClick={closeModal}>
                 닫기
