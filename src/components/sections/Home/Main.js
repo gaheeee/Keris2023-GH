@@ -40,8 +40,8 @@ export default function Main() {
                 <div className="button-container">
                     {selectedTab === 0 && (
                         <>
-                            <ModelBtn to="/p0101">나와 유사한 유명인 찾기</ModelBtn>
-                            <ModelBtn to="/p0201">사진 명화풍 만들기</ModelBtn>
+                            <ModelBtn to="/p0101">날씨에 따른 전기 사용량 예측</ModelBtn>
+                            <ModelBtn to="/p0201">사진에서 서로 다른 대상 찾아내기</ModelBtn>
                             <ModelBtn to="/p0301">키워드로 작문 하기</ModelBtn>
                         </>
                     )}

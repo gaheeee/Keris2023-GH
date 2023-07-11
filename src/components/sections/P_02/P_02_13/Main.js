@@ -1,8 +1,8 @@
-import img from "../../../../assets/p02/p0207_img01.png"
+import img from "../../../../assets/p02/p0213_img01.png"
 
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
-import Grid from "./Grid";
+import Grid from "../P_02_07/Grid";
 
 
 export default function Main() {
@@ -12,7 +12,7 @@ export default function Main() {
                 <img src={img} alt="img" />
             </div>
 
-            <div className="p0207-main">
+            <div className="p0213-main">
                 <Grid/>
             </div>
 

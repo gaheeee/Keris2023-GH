@@ -1,31 +1,30 @@
-
-
 /*p0202*/
-.label-space{
+.label-space {
     display: flex;
     justify-content: center;
 
 }
-.label-space > div {
+
+.label-space>div {
     margin: 1rem;
     width: 22rem;
     transition: all 0.3s ease;
 }
 
-.label-space > div:hover{
+.label-space>div:hover {
     cursor: pointer;
     opacity: 50%;
 }
 
 
-.selected img{
+.selected img {
     cursor: pointer;
     opacity: 30%;
     border: solid 3px grey;
 }
 
-.modal{
-    color:#363636;
+.modal {
+    color: #363636;
     background-color: white;
     border: solid grey;
     border-radius: 10px;
@@ -37,7 +36,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.modal button{
+
+.modal button {
     border: solid 1px;
     width: 80px;
     border-radius: 5px;
@@ -46,3 +46,71 @@
     font-size: 15px;
     background-color: #cfcfcf;
 }
+
+/*------------------------*/
+
+
+/*p0207*/
+
+
+.p0207-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background-color: rgb(218, 227, 243);
+    width: auto;
+    margin: 1% 35%;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.p0207-grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.p0207-grid-item>img:hover {
+    cursor: pointer;
+}
+
+
+
+.p0207-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 30%;
+    top: 48%;
+    left: 35%;
+}
+
+.p0207-modal-content {
+    background-color: rgb(218, 227, 243);
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.modal-image {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.p0207-modal-btn button {
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #abc9ff;
+    color: #325da8;
+    font-weight: bold;
+}
+
+.p0207-modal-btn>button:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+/*------------------*/
