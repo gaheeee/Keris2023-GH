@@ -1,9 +1,9 @@
-import img1 from "../../../../assets/p02/p0207_img02.png";
-import img1_1 from "../../../../assets/p02/p0207_img02_1.png";
-import img1_2 from "../../../../assets/p02/p0207_img02_2.png";
-import img2 from "../../../../assets/p02/p0207_img03.png";
-import img3 from "../../../../assets/p02/p0207_img04.png";
-import img4 from "../../../../assets/p02/p0207_img05.png";
+import img1 from "../../../../assets/p02/p0206_img02.png";
+import img1_1 from "../../../../assets/p02/p0206_img02_1.png";
+import img1_2 from "../../../../assets/p02/p0206_img02_2.png";
+import img2 from "../../../../assets/p02/p0206_img03.png";
+import img3 from "../../../../assets/p02/p0206_img04.png";
+import img4 from "../../../../assets/p02/p0206_img05.png";
 import { useState } from "react";
 
 export default function Grid() {

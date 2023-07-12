@@ -1,23 +1,24 @@
-import img1 from "../../../../assets/p02/p0203_img01.png"
-import img2 from "../../../../assets/p02/p0203_img02.png"
+import img from "../../../../assets/p02/p0206_img01.png"
+
 import BlueBtn from "../../buttons/BlueBtn";
 import GreyBtn from "../../buttons/GreyBtn";
+import Grid from "./Grid";
 
 
 export default function Main() {
     return (
         <main>
             <div>
-                <img src={img1} alt="img1" />
+                <img src={img} alt="img" />
             </div>
 
             <div>
-                <img src={img2} alt="img2" />
+                <Grid/>
             </div>
 
             <div className="main-btn">
                 <GreyBtn to="/p0205"></GreyBtn>
-                <BlueBtn to="/p0207">모델 선택</BlueBtn>
+                <BlueBtn to="/p0207">다음 모델로</BlueBtn>
             </div>
         </main>
     );

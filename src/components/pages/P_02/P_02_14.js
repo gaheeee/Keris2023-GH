@@ -1,6 +1,8 @@
 import Heading from "../../Heading";
 import Main from "../../sections/P_02/P_02_14/Main"
 
+
+
 export default function P_02_14(){
     return(
         <>

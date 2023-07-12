@@ -22,6 +22,12 @@ import P_02_11 from "./pages/P_02/P_02_11";
 import P_02_12 from "./pages/P_02/P_02_12";
 import P_02_13 from "./pages/P_02/P_02_13";
 import P_02_14 from "./pages/P_02/P_02_14";
+import P_02_15 from "./pages/P_02/P_02_15";
+import P_02_16 from "./pages/P_02/P_02_16";
+import P_02_17 from "./pages/P_02/P_02_17";
+import P_02_18 from "./pages/P_02/P_02_18";
+import P_02_19 from "./pages/P_02/P_02_19";
+import P_02_20 from "./pages/P_02/P_02_20";
 
 
 import P_03_01 from "./pages/P_03/P_03_01";
@@ -55,6 +61,13 @@ export default function Routing() {
       <Route path="/p0212" element={<P_02_12 />} />
       <Route path="/p0213" element={<P_02_13 />} />
       <Route path="/p0214" element={<P_02_14 />} />
+      <Route path="/p0215" element={<P_02_15 />} />
+      <Route path="/p0216" element={<P_02_16 />} />
+      <Route path="/p0217" element={<P_02_17 />} />
+      <Route path="/p0218" element={<P_02_18 />} />
+      <Route path="/p0219" element={<P_02_19 />} />
+      <Route path="/p0220" element={<P_02_20 />} />
+
 
       <Route path="/p0301" element={<P_03_01 />} />
       <Route path="/p0302" element={<P_03_02 />} />
