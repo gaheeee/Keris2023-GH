@@ -53,88 +53,66 @@
 /*p0207*/
 
 
-.p0207-grid {
-    border: solid 5px;
-    margin: 1% 35%;
-
-}
-
 .p0207-grid-space {
-    border: solid 3px red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-gap: 15px;
     background-color: rgb(218, 227, 243);
-
     border-radius: 50px;
-    padding: 5%;
+    padding: 1.5%;
+    margin: 1% 32%;
 }
 
-.p0207-grid-item {
-    width: 80%;
+.p0207-grid-item>img {
+    width: 100%;
     height: 100%;
-    justify-items: center;
 }
 
 .p0207-grid-item>img:hover {
     cursor: pointer;
+    opacity: 70%;
 }
-
-
 
 .p0207-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: rgb(218, 227, 243);
+    border-radius: 50px;
+    padding: 2%;
+    margin: -1.5% 32%;
+    width: 32%;
     position: absolute;
-    width: 30%;
-    top: 40%;
-    left: 35%;
+    left: 0%;
 }
 
-/*
-    화면 작은 버전
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    top: 30%;
-    left: 35%;
-*/
-
 .p0207-modal-content {
-    background-color: rgb(218, 227, 243);
-    margin-top: 30px;
-    border-radius: 50px;
+    height: 100%;
     width: 100%;
 }
 
-.modal-image {
+.modal-img {
     width: 80%;
 }
 
 .detection-img {
-    width: 80%;
+
+    width: 71.1%;
     position: absolute;
-    left: 10%;
+    left: 14.5%;
 }
 
 .accuracy-img {
-    width: 40%;
-
+    width: 71.1%;
     position: absolute;
-    top: 35%;
-    left: 30%;
+    left: 14.5%;
 }
 
 .p0207-modal-btn button {
-    width: 25%;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 24%;
+    margin: 6% 3% 0% 3%;
     padding: 5px;
     background-color: #abc9ff;
     color: #325da8;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .p0207-modal-btn>button:hover {

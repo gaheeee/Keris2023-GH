@@ -1,6 +1,6 @@
 import img1 from "../../../../assets/p02/p0206_img02.jpg";
-import img1_1 from "../../../../assets/p02/p0206_img02_1.png";
-import img1_2 from "../../../../assets/p02/p0206_img02_2.png";
+import img1_1 from "../../../../assets/p02/p0206_img02_1.jpg";
+import img1_2 from "../../../../assets/p02/p0206_img02_2.jpg";
 import img2 from "../../../../assets/p02/p0206_img03.jpg";
 import img3 from "../../../../assets/p02/p0206_img04.jpg";
 import img4 from "../../../../assets/p02/p0206_img05.jpg";
@@ -47,47 +47,50 @@ export default function Grid() {
         <div className="p0207-grid-item" onClick={() => openModal(img4)}>
           <img src={img4} alt="img4" />
         </div>
-      </div>
 
-      {selectedImage && (
-        <div className="p0207-modal">
-          <div className="p0207-modal-content">
-            <img
-              src={selectedImage}
-              alt="modal-img"
-              className="modal-image"
-            />
 
-            {showDetectionResult && (
+        {selectedImage && (
+          <div className="p0207-modal">
+            <div className="p0207-modal-content">
               <img
-                src={img1_1}
+                src={selectedImage}
                 alt="modal-img"
-                className="detection-img"
+                className="modal-img"
               />
-            )}
 
-            {showAccuracy && (
-              <img
-                src={img1_2}
-                alt="modal-img"
-                className="accuracy-img"
-              />
-            )}
+              {showDetectionResult && (
+                <img
+                  src={img1_1}
+                  alt="modal-img"
+                  className="detection-img"
+                />
+              )}
 
-            <div className="p0207-modal-btn">
-              <button onClick={toggleResult}>
-                {showDetectionResult ? "검출 결과 감추기" : "검출 결과 보기"}
-              </button>
-              <button onClick={toggleAccuracy}>
-                {showAccuracy ? "정확도 감추기" : "정확도 보기"}
-              </button>
-              <button className="close" onClick={closeModal}>
-                닫기
-              </button>
+              {showAccuracy && (
+                <img
+                  src={img1_2}
+                  alt="modal-img"
+                  className="accuracy-img"
+                />
+              )}
+
+              <div className="p0207-modal-btn">
+                <button onClick={toggleResult}>
+                  {showDetectionResult ? "검출 결과 감추기" : "검출 결과 보기"}
+                </button>
+                <button onClick={toggleAccuracy}>
+                  {showAccuracy ? "정확도 감추기" : "정확도 보기"}
+                </button>
+                <button className="close" onClick={closeModal}>
+                  닫기
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+
+
     </div>
   );
 }
