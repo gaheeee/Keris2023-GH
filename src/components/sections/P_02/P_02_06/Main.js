@@ -1,7 +1,4 @@
 import img from "../../../../assets/p02/p0206_img01.png"
-
-import BlueBtn from "../../buttons/BlueBtn";
-import GreyBtn from "../../buttons/GreyBtn";
 import Grid from "./Grid";
 
 
@@ -13,12 +10,10 @@ export default function Main() {
             </div>
 
             <div>
-                <Grid/>
-            </div>
-
-            <div className="main-btn">
-                <GreyBtn to="/p0205"></GreyBtn>
-                <BlueBtn to="/p0207">다음 모델로</BlueBtn>
+                <Grid
+                prop_grey={"/p0205"}
+                prop_blue={"/p0207"}
+                />
             </div>
         </main>
     );
