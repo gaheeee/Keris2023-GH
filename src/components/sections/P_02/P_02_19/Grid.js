@@ -1,29 +1,29 @@
 import img1 from "../../../../assets/p02/p0206_img02.jpg";
-import img1_1 from "../../../../assets/p02//p0206_img02_1.jpg";
+import img1_1 from "../../../../assets/p02/p0206_img02_1.jpg";
 import img1_2 from "../../../../assets/p02/p0206_img02_2.jpg";
-import img1_3 from "../../../../assets/p02/p0206_img02_5.jpg";
-import img1_4 from "../../../../assets/p02/p0206_img02_5.jpg";
+import img1_3 from "../../../../assets/p02/p0206_img02_3.jpg";
+import img1_4 from "../../../../assets/p02/p0206_img02_4.jpg";
 import img1_5 from "../../../../assets/p02/p0206_img02_6.jpg";
 
 import img2 from "../../../../assets/p02/p0206_img03.jpg";
 import img2_1 from "../../../../assets/p02/p0206_img03_1.jpg";
 import img2_2 from "../../../../assets/p02/p0206_img03_2.jpg";
-import img2_3 from "../../../../assets/p02/p0206_img03_5.jpg";
-import img2_4 from "../../../../assets/p02/p0206_img03_2.jpg";
+import img2_3 from "../../../../assets/p02/p0206_img03_3.jpg";
+import img2_4 from "../../../../assets/p02/p0206_img03_4.jpg";
 import img2_5 from "../../../../assets/p02/p0206_img03_6.jpg";
 
 import img3 from "../../../../assets/p02/p0206_img04.jpg";
 import img3_1 from "../../../../assets/p02/p0206_img04_1.jpg";
 import img3_2 from "../../../../assets/p02/p0206_img04_2.jpg";
-import img3_3 from "../../../../assets/p02/p0206_img04_5.jpg";
-import img3_4 from "../../../../assets/p02/p0206_img04_2.jpg";
+import img3_3 from "../../../../assets/p02/p0206_img04_3.jpg";
+import img3_4 from "../../../../assets/p02/p0206_img04_4.jpg";
 import img3_5 from "../../../../assets/p02/p0206_img04_6.jpg";
 
 import img4 from "../../../../assets/p02/p0206_img05.jpg";
 import img4_1 from "../../../../assets/p02/p0206_img05_1.jpg";
 import img4_2 from "../../../../assets/p02/p0206_img05_2.jpg";
-import img4_3 from "../../../../assets/p02/p0206_img05_5.jpg";
-import img4_4 from "../../../../assets/p02/p0206_img05_2.jpg";
+import img4_3 from "../../../../assets/p02/p0206_img05_3.jpg";
+import img4_4 from "../../../../assets/p02/p0206_img05_4.jpg";
 import img4_5 from "../../../../assets/p02/p0206_img05_6.jpg";
 
 import { useState } from "react";
@@ -66,7 +66,7 @@ export default function Grid() {
   };
 
   const toggleBookResult = () => {
-    setShowPersonResult((prevState) => !prevState);
+    setShowBookResult((prevState) => !prevState);
     setShowPersonResult(false);
     setShowBagResult(false);
     setShowComputerResult(false);
@@ -74,7 +74,7 @@ export default function Grid() {
   };
 
   const toggleComputerResult = () => {
-    setShowBagResult((prevState) => !prevState);
+    setShowComputerResult((prevState) => !prevState);
     setShowPersonResult(false);
     setShowBagResult(false);
     setShowBookResult(false);

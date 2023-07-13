@@ -6,20 +6,24 @@ import { useState } from 'react';
 export default function Labeling({ img1, img2, img3, answer, fail1, fail2, prop_grey, prop_blue }) {
     const [selectedImage, setSelectedImage] = useState(null);
     const [showModal, setShowModal] = useState(false);
+    const [modalMessage, setModalMessage] = useState("");
 
     const handleImageClick = (imageName) => {
         setSelectedImage(imageName);
     };
+
     const handleNextClick = () => {
         if (selectedImage === answer) {
             window.location.href = prop_blue;
         } else if (selectedImage === fail1 || selectedImage === fail2) {
+            setModalMessage("다시 선택해보세요 !");
             setShowModal(true);
         } else {
-            alert('사진을 선택해주세요 !');
-            return;
+            setModalMessage("사진을 선택해주세요 !");
+            setShowModal(true);
         }
     };
+
     const closeModal = () => {
         setShowModal(false);
     };
@@ -45,22 +49,17 @@ export default function Labeling({ img1, img2, img3, answer, fail1, fail2, prop_
                 >
                     <img src={img3} alt="img3" />
                 </div>
-
             </div>
             <div className="main-btn">
                 <GreyBtn to={prop_grey} />
                 <BlueBtn onClick={handleNextClick}>다음 단계로</BlueBtn>
             </div>
-
-
             {showModal && (
                 <div className="modal">
-                    <h3>다시 선택해보세요 !</h3>
+                    <h3>{modalMessage}</h3>
                     <button onClick={closeModal}>닫기</button>
                 </div>
             )}
-
         </div>
-
     );
 }
