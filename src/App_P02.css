@@ -50,10 +50,10 @@
 /*------------------------*/
 
 
-/*p0207*/
+/*p0206*/
 
 
-.p0207-grid-space {
+.p0206-grid-space {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -63,51 +63,55 @@
     margin: 1% 32%;
 }
 
-.p0207-grid-item>img {
-    width: 100%;
+.p0206-grid-item>img {
+    width: 80%;
     height: 100%;
+
+    border: solid 2px white;
 }
 
-.p0207-grid-item>img:hover {
+.p0206-grid-item>img:hover {
     cursor: pointer;
     opacity: 70%;
 }
 
-.p0207-modal {
+.p0206-modal {
     background-color: rgb(218, 227, 243);
     border-radius: 50px;
-    padding: 2%;
+    padding: 2% 2% 0% 2%;
     margin: -1.5% 32%;
     width: 32%;
     position: absolute;
     left: 0%;
+
 }
 
-.p0207-modal-content {
-    height: 100%;
-    width: 100%;
+.p0206-modal-content {
+    width: 80%;
+    margin: 0% 10%;
 }
 
 .modal-img {
     width: 80%;
+    margin-bottom: 2%;
 }
 
 .detection-img {
-
-    width: 71.1%;
+    width: 56.9%;
     position: absolute;
-    left: 14.5%;
+    left: 21.6%;
 }
 
-.accuracy-img {
-    width: 71.1%;
-    position: absolute;
-    left: 14.5%;
+#p0206-modal-blank{
+    margin-bottom: 5%;
+}
+#p0206-modal-blank > img{
+    margin-bottom: 5%;
 }
 
-.p0207-modal-btn button {
-    width: 24%;
-    margin: 6% 3% 0% 3%;
+.p0206-modal-btn button {
+    width: 26%;
+    margin: 2% 3% 2% 3%;
     padding: 5px;
     background-color: #abc9ff;
     color: #325da8;
@@ -115,7 +119,7 @@
     border-radius: 5px;
 }
 
-.p0207-modal-btn>button:hover {
+.p0206-modal-btn>button:hover {
     cursor: pointer;
     opacity: 50%;
 }
