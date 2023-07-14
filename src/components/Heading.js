@@ -6,8 +6,7 @@ export default function Heading({ to , children}) {
         <header>
             <div className="header-upper">
                 <GreyBtn to = {to}></GreyBtn>
-                <div className="header-blank">
-                </div>
+                <div className="header-blank"/>
                 <button className="header-logout-btn">
                     로그아웃
                 </button>

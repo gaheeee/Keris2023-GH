@@ -168,10 +168,8 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  padding: 0 2rem 0 2rem;
+  padding: 0rem 2rem 0 2rem;
 }
-
 
 .header-blank {
   width: 70%
@@ -199,10 +197,11 @@ footer p {
 }
 
 header>h1 {
-  font-size: 3rem;
   font-weight: 600;
   text-align: center;
   color: rgb(40, 44, 97);
+  margin : 0%;
+  margin-bottom : 1%;
 }
 
 /*--------------------------*/
@@ -348,7 +347,7 @@ main {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   border: solid 1px #6db4f2;
-
+  width: 90%;
 }
 
 
@@ -361,6 +360,9 @@ main {
 }
 
 .blank{
+
+  grid-column: 1 / 5;
+	grid-row: 2 / 3;
   border-top: solid 1px #6db4f2;
 }
 
@@ -368,9 +370,10 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 .num-ele > img{
-  margin: 0.5rem 1rem;
+  margin: 20% 0%;
   width: 2rem;
 }
 
@@ -470,3 +473,15 @@ main {
   width: 70%;
   margin: 1% 15%;
 }
+
+.num2 {
+  border-top: solid 1px #6db4f2;
+  min-height: 6rem;
+  font-size: 0.9rem;
+}
+
+.num2:hover{
+  cursor: pointer;
+}
+
+

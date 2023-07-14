@@ -201,7 +201,7 @@ export default function Grid({ prop_grey, prop_blue }) {
       </div>
       <div className="main-btn">
         <GreyBtn to={prop_grey} />
-        <BlueBtn onClick={handleNextClick}>다음 모델로</BlueBtn>
+        <BlueBtn onClick={handleNextClick}>체험 종료</BlueBtn>
       </div>
       {showModal && (
         <div className="modal">

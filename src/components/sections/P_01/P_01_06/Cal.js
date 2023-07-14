@@ -28,13 +28,12 @@ export default function Cal() {
             <Day>목</Day>
             <Day>금</Day>
             <Day>토</Day>
-            <div className="blank"/>
-            <div className="blank"/>
-            <div className="blank"/>
-            <div className="blank"/>
-            <Num img={w2}>7/1</Num>
-            <Num img={w2}>2</Num>
-            <Num img={w3}>3</Num>
+
+            <div className="blank"><b>실제 데이터</b></div>
+
+            <Num img={w2} data = "10000">7/1</Num>
+            <Num img={w2} data = "9500">2</Num>
+            <Num img={w3} data = "8000">3</Num>
             <Num img={w4}>4</Num>
             <Num img={w1}>5</Num>
             <Num img={w2}>6</Num>

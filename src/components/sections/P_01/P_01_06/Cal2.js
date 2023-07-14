@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Num from "./Num";
+import Num from "./Num2";
 import w1 from "../../../../assets/p01/weather/w1.png" ;
 import w2 from "../../../../assets/p01/weather/w2.png" 
 import w3 from "../../../../assets/p01/weather/w3.png" 
@@ -16,7 +16,7 @@ font-size: 20px;
 font-weight: bold;
 `;
 
-export default function Cal() {
+export default function Cal2() {
 
 
     return (
@@ -28,13 +28,12 @@ export default function Cal() {
             <Day>목</Day>
             <Day>금</Day>
             <Day>토</Day>
-            <div className="blank"/>
-            <div className="blank"/>
-            <div className="blank"/>
-            <div className="blank"/>
-            <Num img={w2}>7/1</Num>
-            <Num img={w2}>2</Num>
-            <Num img={w3}>3</Num>
+
+            <div className="blank"><b>예측 데이터</b></div>
+
+            <Num img={w2} data = "9800">7/1</Num>
+            <Num img={w2} data = "9700">2</Num>
+            <Num img={w3} data = "8150">3</Num>
             <Num img={w4}>4</Num>
             <Num img={w1}>5</Num>
             <Num img={w2}>6</Num>
