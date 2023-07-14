@@ -1,7 +1,6 @@
 
-export default function Num({ children, img, data}) {
 
-
+export default function Num({ children, img, data , OX}) {
 
     return (
         <div className="num2">
@@ -9,6 +8,7 @@ export default function Num({ children, img, data}) {
                 <b>{children}</b>
                 {img && <img src={img} alt="weather"/>}
                 <b>{data}</b>
+
             </div>
         </div>
     );

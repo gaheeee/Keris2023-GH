@@ -20,7 +20,7 @@ export default function Cal() {
 
 
     return (
-        <div className="calender">
+        <div className="calender2">
             <Day>일</Day>
             <Day>월</Day>
             <Day>화</Day>

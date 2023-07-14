@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import Num from "./Num2";
-import w1 from "../../../../assets/p01/weather/w1.png" ;
-import w2 from "../../../../assets/p01/weather/w2.png" 
-import w3 from "../../../../assets/p01/weather/w3.png" 
-import w4 from "../../../../assets/p01/weather/w4.png" 
-import w5 from "../../../../assets/p01/weather/w5.png" 
+import w1 from "../../../../assets/p01/weather/w1.png";
+import w2 from "../../../../assets/p01/weather/w2.png"
+import w3 from "../../../../assets/p01/weather/w3.png"
+import w4 from "../../../../assets/p01/weather/w4.png"
+import w5 from "../../../../assets/p01/weather/w5.png"
+import img_O from "../../../../assets/p01/O.png";
+import img_X from "../../../../assets/p01/X.png";
+import { useState } from "react";
 
 
 const Day = styled.div`
@@ -17,10 +20,16 @@ font-weight: bold;
 `;
 
 export default function Cal2() {
+    const [imageToggles, setImageToggles] = useState([false, false, false]);
 
+    const handleClick = (index) => {
+      const updatedToggles = [...imageToggles];
+      updatedToggles[index] = !updatedToggles[index];
+      setImageToggles(updatedToggles);
+    };
 
     return (
-        <div className="calender">
+        <div className="calender2">
             <Day>일</Day>
             <Day>월</Day>
             <Day>화</Day>
@@ -31,9 +40,18 @@ export default function Cal2() {
 
             <div className="blank"><b>예측 데이터</b></div>
 
-            <Num img={w2} data = "9800">7/1</Num>
-            <Num img={w2} data = "9700">2</Num>
-            <Num img={w3} data = "8150">3</Num>
+            <Num img={w2} data="9800" >
+                7/1
+                <img src={imageToggles[0] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(0)} />
+            </Num>
+            <Num img={w2} data="9700" >
+                2
+                <img src={imageToggles[1] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(1)} />
+            </Num>
+            <Num img={w3} data="8150" >
+                3
+                <img src={imageToggles[2] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(2)} />
+            </Num>
             <Num img={w4}>4</Num>
             <Num img={w1}>5</Num>
             <Num img={w2}>6</Num>

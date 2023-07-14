@@ -200,8 +200,8 @@ header>h1 {
   font-weight: 600;
   text-align: center;
   color: rgb(40, 44, 97);
-  margin : 0%;
-  margin-bottom : 1%;
+  margin: 0%;
+  margin-bottom: 1%;
 }
 
 /*--------------------------*/
@@ -282,11 +282,15 @@ main {
   display: flex;
   justify-content: center;
 }
-.calendar-space-left{
+
+.calendar-space-left {
   width: 20%;
+
 }
-.calendar-space-right{
+
+.calendar-space-right {
   width: 40%;
+  margin-left: 2%;
 }
 
 /*요소별 체크박스*/
@@ -353,32 +357,33 @@ main {
 
 .num {
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   border-top: solid 1px #6db4f2;
   min-height: 6rem;
   font-size: 0.9rem;
 }
 
-.blank{
+.blank {
 
   grid-column: 1 / 5;
-	grid-row: 2 / 3;
+  grid-row: 2 / 3;
   border-top: solid 1px #6db4f2;
 }
 
-.num-ele{
+.num-ele {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-.num-ele > img{
+
+.num-ele>img {
   margin: 20% 0%;
   width: 2rem;
 }
 
 
-.num-span > p{
+.num-span>p {
   font-size: 1px;
 }
 
@@ -436,22 +441,24 @@ main {
 
 /*p0104*/
 
-.p0104-main{
+.p0104-main {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.board-wrap{
+.board-wrap {
   position: relative;
 }
-.board-img{
+
+.board-img {
   width: 100%;
   vertical-align: middle;
 }
-.board-text{
+
+.board-text {
   position: absolute;
-  top:40%;
+  top: 40%;
   left: 50%;
   width: 80%;
   height: 70%;
@@ -459,7 +466,7 @@ main {
 }
 
 
-.green-board{
+.green-board {
   color: white;
   white-space: pre;
   text-align: left;
@@ -467,11 +474,24 @@ main {
 
 /*---------------------*/
 
-.calendar-space2{
+/*p0106*/
+
+.h4-ox{
+  width: 1%;
+}
+
+.calendar-space2 {
   display: flex;
   justify-content: center;
   width: 70%;
   margin: 1% 15%;
+}
+
+.calender2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: solid 1px #6db4f2;
+  width: 40%;
 }
 
 .num2 {
@@ -480,8 +500,13 @@ main {
   font-size: 0.9rem;
 }
 
-.num2:hover{
-  cursor: pointer;
+
+.num-ox {
+  position: absolute;
+  width: 2%;
+  margin : 1.6% -1.4%;
 }
 
-
+.num-ox:hover {
+  cursor: pointer;
+}
