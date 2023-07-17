@@ -18,7 +18,6 @@ font-weight: bold;
 
 export default function Cal() {
 
-
     return (
         <div className="calender">
             <Day>일</Day>
