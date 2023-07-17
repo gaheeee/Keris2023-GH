@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Num from './Num';
 
 export default function Element() {
     const [checkboxes, setCheckboxes] = useState({
@@ -25,11 +24,12 @@ export default function Element() {
         }));
     };
 
-    const selectedCheckboxes = Object.keys(checkboxes).filter(name => checkboxes[name]);
-
     const renderCheckboxes = () => {
         return Object.keys(checkboxes).map((checkboxName) => (
+
+
             <label key={checkboxName} className="checkbox-label">
+
                 <span className="checkbox-name">{checkboxName}</span>
                 <input
                     type="checkbox"
@@ -38,9 +38,9 @@ export default function Element() {
                     name={checkboxName}
                     checked={checkboxes[checkboxName]}
                     onChange={handleCheckboxChange}
-                    disabled={checkboxName === "평균 기온"}
+                    disabled={checkboxName === "평균 기온"} // 평균 기온 체크박스는 비활성화
                 />
-                <span className="checkbox-custom"></span>
+                <span className="checkbox-custom" ></span>
             </label>
         ));
     };
@@ -48,7 +48,6 @@ export default function Element() {
     return (
         <div className="calendar-check-compo">
             {renderCheckboxes()}
-            <Num selectedCheckboxes={selectedCheckboxes} />
         </div>
     );
 }
