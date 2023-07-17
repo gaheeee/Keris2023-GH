@@ -7,7 +7,7 @@ import w4 from "../../../../assets/p01/weather/w4.png"
 import w5 from "../../../../assets/p01/weather/w5.png"
 import img_O from "../../../../assets/p01/O.png";
 import img_X from "../../../../assets/p01/X.png";
-import { useState } from "react";
+import { useState} from "react";
 
 
 const Day = styled.div`
@@ -19,15 +19,22 @@ font-size: 20px;
 font-weight: bold;
 `;
 
-export default function Cal2() {
+export default function Cal2({ handleNewSignal }) {
     const [imageToggles, setImageToggles] = useState([false, false, false]);
+
 
     const handleClick = (index) => {
       const updatedToggles = [...imageToggles];
       updatedToggles[index] = !updatedToggles[index];
       setImageToggles(updatedToggles);
-    };
 
+      if (updatedToggles[0] && !updatedToggles[1] && updatedToggles[2]) {
+        handleNewSignal(true);
+      } else {
+        handleNewSignal(false);
+      }
+    };
+    
     return (
         <div className="calender2">
             <Day>일</Day>
@@ -42,15 +49,15 @@ export default function Cal2() {
 
             <Num img={w2} data="9800" >
                 7/1
-                <img src={imageToggles[0] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(0)} />
+                <img src={imageToggles[0] ? img_O : img_X} alt="OX" className="num-ox" onClick={() => handleClick(0)} />
             </Num>
-            <Num img={w2} data="9700" >
+            <Num img={w2} data="9200" >
                 2
-                <img src={imageToggles[1] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(1)} />
+                <img src={imageToggles[1] ? img_O : img_X} alt="OX" className="num-ox" onClick={() => handleClick(1)} />
             </Num>
             <Num img={w3} data="8150" >
                 3
-                <img src={imageToggles[2] ? img_X : img_O} alt="OX" className="num-ox" onClick={() => handleClick(2)} />
+                <img src={imageToggles[2] ? img_O : img_X} alt="OX" className="num-ox" onClick={() => handleClick(2)} />
             </Num>
             <Num img={w4}>4</Num>
             <Num img={w1}>5</Num>
