@@ -4,9 +4,11 @@ import axios from "axios";
 
 export default function DataTest() {
     let [mydata, setData] = useState([]);
+
     useEffect(() => {
         axios
-            .get("https://7e2da4aa-41d3-4453-8364-c0aa236497e9.mock.pstmn.io/list")
+            .get("https://50d47fc2-13b1-4717-a6aa-5bd9e15af203.mock.pstmn.io/ele7")
+
             .then((result) => {
                 console.log(result.data);
                 setData(result.data);
@@ -16,16 +18,14 @@ export default function DataTest() {
             });
     }, []);
 
+
     return (
         <div>
-            <Heading to = "/">데이터 가져오기</Heading>
+            <Heading to="/">데이터 가져오기</Heading>
             {mydata.map((data) => (
                 <p key={data.id}>
-                    id : {data.id} <br/>
-                    name : {data.name} <br/>
-                    dge : {data.age}
+                    {data.id} : {data.text}
                 </p>
-
             ))}
         </div>
     );

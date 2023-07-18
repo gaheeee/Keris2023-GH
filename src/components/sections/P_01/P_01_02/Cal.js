@@ -5,7 +5,8 @@ import w2 from "../../../../assets/p01/weather/w2.png";
 import w3 from "../../../../assets/p01/weather/w3.png";
 import w4 from "../../../../assets/p01/weather/w4.png";
 import w5 from "../../../../assets/p01/weather/w5.png";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Day = styled.div`
 padding : 5px;
@@ -17,6 +18,21 @@ font-weight: bold;
 `;
 
 export default function Cal({ selectedElements }) {
+    const [ele7, setData] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get("https://50d47fc2-13b1-4717-a6aa-5bd9e15af203.mock.pstmn.io/data")
+            .then((result) => {
+               // console.log(result.data);
+                setData(result.data);
+            })
+            .catch((error) => {
+                console.log('error: ' + error);
+            });
+    }, []);
+    
+
     const date = [
         '7/1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
         '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
@@ -57,11 +73,7 @@ export default function Cal({ selectedElements }) {
         "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
         "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
     ];
-    const ele7 = [
-        "1d", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-        "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-        "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
-    ];
+
 
     let activeElements = [];
     if (selectedElements['평균 기온']) {
