@@ -19,12 +19,12 @@ export default function Main() {
                         isActive={selectedTab === 0}
                         onClick={() => handleTabClick(0)}
                     >
-                        비지도학습
+                        지도학습
                     </TabBtn>
                     <TabBtn
                         isActive={selectedTab === 1}
                         onClick={() => handleTabClick(1)}>
-                        지도학습
+                        비지도학습
                     </TabBtn>
                     <TabBtn
                         isActive={selectedTab === 2}
@@ -42,14 +42,14 @@ export default function Main() {
                         <>
                             <ModelBtn to="/p0101">날씨에 따른 전기 사용량 예측</ModelBtn>
                             <ModelBtn to="/p0201">사진에서 서로 다른 대상 찾아내기</ModelBtn>
-                            <ModelBtn to="/p0301">키워드로 작문 하기</ModelBtn>
+                            <ModelBtn to="/p0301">과일 분류하기</ModelBtn>
                         </>
                     )}
                     {selectedTab === 1 && (
                         <>
-                            <ModelBtn to="/">감기환자 분류</ModelBtn>
-                            <ModelBtn to="/">성별 나이 분류</ModelBtn>
-                            <ModelBtn to="/">텍스트 감정분석 하기</ModelBtn>
+                            <ModelBtn to="/">나와 유사한 유명인 찾기</ModelBtn>
+                            <ModelBtn to="/">사진 명화풍 만들기</ModelBtn>
+                            <ModelBtn to="/">키워드로 작문하기</ModelBtn>
                         </>
                     )}
                     {selectedTab === 2 && (
