@@ -5,6 +5,7 @@ import img2 from "../../../../assets/p01/p0104_img02.png";
 import img3 from "../../../../assets/p01/p0104_img03.png";
 import GreenB from "./GreenB";
 
+
 export default function Main() {
     return (
         <main>
@@ -21,7 +22,8 @@ export default function Main() {
                         <img src={img3} alt="img3" />
                     </div>
                     <div className="board-text">
-                        <GreenB />
+
+                        <GreenB/>
                     </div>
                 </div>
             </div>

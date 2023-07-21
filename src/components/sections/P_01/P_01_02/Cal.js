@@ -8,6 +8,7 @@ import w5 from "../../../../assets/p01/weather/w5.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 const Day = styled.div`
 padding : 5px;
 background-color: #bdd7ee;
@@ -16,6 +17,8 @@ height : 2rem;
 font-size: 20px;
 font-weight: bold;
 `;
+
+
 
 export default function Cal({ selectedElements }) {
     const [ele7, setData] = useState([]);
